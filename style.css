@@ -26,9 +26,9 @@ h1 {
 }
 
 .input-section {
+    background-color: d4af37
     display: flex;
     gap: 10px;
-    background-color: d4af37
 }
 
 #taskInput {
