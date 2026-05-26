@@ -19,14 +19,17 @@ addButton.addEventListener("click", function () {
 
   deleteButton.textContent = "Delete";
 
+  deleteButton.addEventListener("click", function () {
+
+    li.remove();
+  });
+
   li.appendChild(deleteButton);
   
   taskList.appendChild(li);
 
   taskInput.value = "";
-}
-                          
-                          
-                          
-                          
-  );
+
+
+
+});
