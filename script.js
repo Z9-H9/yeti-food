@@ -2,6 +2,14 @@ const addButton = document.getElementById("addButton");
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
 
+
+taskInput.addEventListener('keydown', function(event){
+  if (event.key === 'Enter') {
+    document.querySelector('#addButton').click();
+  }
+});
+
+
 addButton.addEventListener("click", function () {
 
   const taskText = taskInput.value;
