@@ -10,7 +10,11 @@ addButton.addEventListener("click", function () {
     alert("Please enter a task.");
     return;
   }
-
+addButton.addEventListener('keydown', function(event){
+  if (event.key === 'Enter') {
+    document.querySelector('#addButton').click();
+  }
+});
   const li = document.createElement("li");
 
   li.textContent = taskText;
